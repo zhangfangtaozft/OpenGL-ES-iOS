@@ -1,0 +1,19 @@
+//
+//  OpenGLES_Ch2_1-Prefix.pch
+//  OpenGLES_Ch2_1
+//
+//  Created by frank.Zhang on 11/02/2018.
+//  Copyright © 2018 Frank.Zhang. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
