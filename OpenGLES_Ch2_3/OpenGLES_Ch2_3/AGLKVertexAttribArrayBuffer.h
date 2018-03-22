@@ -5,6 +5,9 @@
 //  Created by frank.Zhang on 21/03/2018.
 //  Copyright © 2018 Frank.Zhang. All rights reserved.
 //
+/*
+ *AGLKVertexAttribArrayBuffer类封装了使用OpenGL ES 2.0的顶点属性数组缓存（或者简称“顶点缓存”）的所有7个步骤。这个函数减少了应用需要调用的OpenGL ES 函数的数量，在后续章节的例子中重用AGLKVertexAttribArrayBuffer会在尽可能被减少与7个缓存管理步骤相关的错误的同时减少编写的代码量。
+ **/
 
 #import <GLKit/GLKit.h>
 

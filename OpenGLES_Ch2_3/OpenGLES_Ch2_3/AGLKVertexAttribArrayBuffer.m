@@ -5,7 +5,9 @@
 //  Created by frank.Zhang on 21/03/2018.
 //  Copyright © 2018 Frank.Zhang. All rights reserved.
 //
-
+/*
+ *下面的实现在三个方法中封装了7个缓存管理步骤，AGLKVertexAttribArrayBuffer类包含一些错误检查代码，但除此之外还包含一个对于例子OpenGLES_Ch2_1中的缓存管理代码的简单重用和重构。除了在类接口中声明的3个方法之外，还实现了一个“-dealloc”方法来删除一个相关联的OpenGL ES缓存标识符。
+ **/
 #import "AGLKVertexAttribArrayBuffer.h"
 
 @interface AGLKVertexAttribArrayBuffer ()

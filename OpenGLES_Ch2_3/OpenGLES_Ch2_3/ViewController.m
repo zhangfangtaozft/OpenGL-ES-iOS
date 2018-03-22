@@ -5,6 +5,10 @@
 //  Created by frank.Zhang on 21/03/2018.
 //  Copyright © 2018 Frank.Zhang. All rights reserved.
 //
+/*
+ *GLKit类封装并简化了Cocoa Touch应用和OpenGL ES之间的常见交互，就像推测已存的GLKit类可能是怎么实现的是一种指导一样，遵循苹果的用来构建GLKit的范例来创建新类也是可能的。
+ 本章的OpenGLES_Ch2_1例子使用了GLKit，并且为了实现两个目的添加了对于OpenGL ES函数的直接调用，这两个目的是：清除缓存，以及使用一个顶点数组缓存来绘图，就像GLKit的GLKView封装了帧缓存和层管理，例子OpenGLES_Ch2_3重构OpenGLES_Ch2_1的可重用OpenGL ES代码为两个新类：AGLKContext和AGLKVertexAttribArrayBuffer。本书使用AGLK作为类和函数前缀来代表是对于GLKit类的追加，GLKit将来的版本可能包含与AGLKit类相似的类，苹果通常不会预告对于其框架的增强，并且即使苹果最终实现了与本书中的AGLK类具有相似功能的类，也无法保证苹果会按相同的方式实现它。
+ **/
 
 #import "ViewController.h"
 #import <UIKit/UIKit.h>
@@ -58,6 +62,8 @@ static const SceneVertex vertices[] =
     // all subsequent rendering
     self.baseEffect = [[GLKBaseEffect alloc] init];
     self.baseEffect.useConstantColor = GL_TRUE;
+    //仔细检查例子本例子中的类的实现，并把它与例子OpenGLES_Ch2_1中的类的实现做一下对比，在本例子中没有对于OpenGL ES函数的直接调用。另外，你可能会注意到一些小的代码风格的不一致。例如OpenGLES_Ch2_1使用一个GLKVector4结构体来设置恒定的颜色，但是用来设置清除颜色的对于OpenGL ES 函数的调用可以直接接收RGBA颜色元素值：
+    //AGLKVertexAttribArrayBuffer和AGLKContext类扩展了GLKit引入的代码样式，因此OpenGLES_Ch2_3例子会使用一个一贯的样式：
     self.baseEffect.constantColor = GLKVector4Make(
                                                    1.0f, // Red
                                                    1.0f, // Green
@@ -70,7 +76,7 @@ static const SceneVertex vertices[] =
                                                               0.0f, // Green
                                                               0.0f, // Blue
                                                               1.0f);// Alpha
-    
+    //细小的样式一致性上的改进会让应用代码更整洁，但是更重要的是，在objective-C类中封装OpenGL ES代码会让代码重用更容易，减少缓存被创建并使用时出现程序错误的机会，同时，可让用多个缓存的应用需要编写，测试的代码更少。
     // Create vertex buffer containing vertices to draw
     self.vertexBuffer = [[AGLKVertexAttribArrayBuffer alloc]
                          initWithAttribStride:sizeof(SceneVertex)

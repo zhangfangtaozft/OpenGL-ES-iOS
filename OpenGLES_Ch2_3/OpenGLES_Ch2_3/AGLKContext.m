@@ -5,6 +5,9 @@
 //  Created by frank.Zhang on 21/03/2018.
 //  Copyright © 2018 Frank.Zhang. All rights reserved.
 //
+/*
+ *AGLKContext的实例实现了“-clear：”方法和用于clearColor属性发的访问器，通过调用一个OpenGL ES的glClearColor()函数来设置clearColor属性。“-clear：”方法通过调用glClear()方法来实现。
+ **/
 
 
 #import "AGLKContext.h"
