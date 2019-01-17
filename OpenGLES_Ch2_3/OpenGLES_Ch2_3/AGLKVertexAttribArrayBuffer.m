@@ -29,9 +29,7 @@ stride;
 
 
 /////////////////////////////////////////////////////////////////
-// This method creates a vertex attribute array buffer in
-// the current OpenGL ES context for the thread upon which this
-// method is called.
+//此方法在中创建顶点属性数组缓冲区,这个线程的当前OpenGL ES上下文方法被调用。
 - (id)initWithAttribStride:(GLsizeiptr)aStride
           numberOfVertices:(GLsizei)count
                      bytes:(const GLvoid *)dataPtr
@@ -65,7 +63,7 @@ stride;
 
 
 /////////////////////////////////////////////////////////////////
-// This method loads the data stored by the receiver.
+// 此方法加载接收器存储的数据。
 - (void)reinitWithAttribStride:(GLsizeiptr)aStride
               numberOfVertices:(GLsizei)count
                          bytes:(const GLvoid *)dataPtr;
@@ -89,10 +87,7 @@ stride;
 
 
 /////////////////////////////////////////////////////////////////
-// A vertex attribute array buffer must be prepared when your
-// application wants to use the buffer to render any geometry.
-// When your application prepares an buffer, some OpenGL ES state
-// is altered to allow bind the buffer and configure pointers.
+//当你的时候必须准备一个顶点属性数组缓冲区，应用程序想要使用缓冲区来渲染任何几何体。当应用程序准备缓冲区时，某些OpenGL ES状态被更改为允许绑定缓冲区并配置指针。
 - (void)prepareToDrawWithAttrib:(GLuint)index
             numberOfCoordinates:(GLint)count
                    attribOffset:(GLsizeiptr)offset
@@ -132,9 +127,9 @@ stride;
 
 
 /////////////////////////////////////////////////////////////////
-// Submits the drawing command identified by mode and instructs
-// OpenGL ES to use count vertices from the buffer starting from
-// the vertex at index first. Vertex indices start at 0.
+//提交由mode标识的绘图命令并指示
+//  OpenGL ES从缓冲区开始使用计数顶点
+//  首先是索引处的顶点。 顶点索引从0开始。
 - (void)drawArrayWithMode:(GLenum)mode
          startVertexIndex:(GLint)first
          numberOfVertices:(GLsizei)count
@@ -148,10 +143,10 @@ stride;
 
 
 /////////////////////////////////////////////////////////////////
-// Submits the drawing command identified by mode and instructs
-// OpenGL ES to use count vertices from previously prepared
-// buffers starting from the vertex at index first in the
-// prepared buffers
+//提交由mode标识的绘图命令并指示
+//  OpenGL ES使用之前准备的计数顶点
+//  缓冲区首先从索引处的顶点开始
+//  准备缓冲区
 + (void)drawPreparedArraysWithMode:(GLenum)mode
                   startVertexIndex:(GLint)first
                   numberOfVertices:(GLsizei)count;

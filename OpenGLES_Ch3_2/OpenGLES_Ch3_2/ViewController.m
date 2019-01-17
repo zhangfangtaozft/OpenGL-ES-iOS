@@ -10,7 +10,9 @@
 #import "AGLKVertexAttribArrayBuffer.h"
 #import "AGLKContext.h"
 #import "AGLKTextureLoader.h"
-
+/*
+ 大部分的OpenGL ES 实现要么需要，要哦么受益于使用尺寸为2的幂的纹理。这个例子中使用的图像是256*256像素。这个尺寸符合OpenGL ES的要求。因为256是2的幂。2的幂包括2^0 = 1,2^1 = 2.....一个4x64的纹理是有效的，一个128x128的纹理可以工作良好，一个1x62的纹理也可以，一个200x200的纹理要么不工作，要么根据使用的OpenGL ES版本在渲染时导致效率低下，限制纹理尺寸，不会引起任何问题，本例中就有这个相关处理。
+ */
 @interface ViewController ()
 
 @end
@@ -66,7 +68,6 @@ static const SceneVertex vertices[] =
     // Setup texture
     CGImageRef imageRef =
     [[UIImage imageNamed:@"leaves.gif"] CGImage];
-    
     AGLKTextureInfo *textureInfo = [AGLKTextureLoader
                                     textureWithCGImage:imageRef
                                     options:nil

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpenGLES_Ch2_3/AGLKVertexAttribArrayBuffer.m"
+            timestampString = "569231342.864436"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "-prepareToDrawWithAttrib:numberOfCoordinates:attribOffset:shouldEnable:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AGLKVertexAttribArrayBuffer prepareToDrawWithAttrib:numberOfCoordinates:attribOffset:shouldEnable:]"
+                  moduleName = "OpenGLES_Ch2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/frank.zhang/OpenGL-ES-iOS/OpenGLES_Ch2_3/OpenGLES_Ch2_3/AGLKVertexAttribArrayBuffer.m"
+                  timestampString = "569231342.950457"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "357">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AGLKVertexAttribArrayBuffer prepareToDrawWithAttrib:numberOfCoordinates:attribOffset:shouldEnable:]"
+                  moduleName = "OpenGLES_Ch2_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/frank.zhang/OpenGL-ES-iOS/OpenGLES_Ch2_3/OpenGLES_Ch2_3/AGLKVertexAttribArrayBuffer.m"
+                  timestampString = "569231342.955681"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "436">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

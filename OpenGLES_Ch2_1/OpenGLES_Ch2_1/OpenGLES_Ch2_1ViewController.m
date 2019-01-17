@@ -76,9 +76,26 @@ static const SceneVertex vertices[] = {
     [self.baseEffect prepareToDraw];
     glClear(GL_COLOR_BUFFER_BIT);
     glEnableVertexAttribArray(GLKVertexAttribPosition);
+    /*告诉OpenGL ES顶点数据在哪里，以及怎么解释为没一个顶点保存的数据。下面是对于每一个参数的解释：
+     第一个参数表示当前保存的缓存包含每一个顶点的位置信息。
+     第二个参数表示每一个定点包含三个部分。
+     第三个参数告诉OpenGL ES每部分保存为一个浮点类型的值。
+     第四个部分告诉Opengl ES小数点固定数据是否可以被改变。这个例子中没有使用小数点固定的数据，所以选择GL_FALSE。
+     第五个参数叫做“步幅”，它指定了每一个定点的保存需要多少个字节。换句话说，步幅指定了GPU从一个定点内存位置开始到下一个定点内存位置转到下一个顶点的内存开始位置需要跳过多少字节。sizeof(GLKVector3)指示在缓存中没有额外的字节，也就是说，顶点位置数据是密封的，在一个顶点缓存中保存了每一个顶点的X,Y,Z坐标之外的其他数据也是有可能的。因此，在内存中，在一个顶点与下一个顶点的位置坐标之间有缺口也是有可能的。
+     第六个参数是NULL，表示可以从当前绑定的顶点缓存的开始位置访问顶点数据。
+     */
     glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(SceneVertex), NULL);
+    /*
+    glDrawArrays()是执行回吐的最后一个步骤，下面是对于每一个参数的解释：
+     第一个参数：会告诉GPU怎么处理在绑定顶点缓存内的顶点数据，
+     第二个参数和第三个参数分别指定缓存内的需要渲染的第一个顶点的位置和顶点的数量。
+     */
     glDrawArrays(GL_TRIANGLES, 0, 3);
+    /*
+     这个例子中的所有的代码试运行在CPU上的，然后再需要进一步处理的时候向GPU发送命令，GPU也可能会处理来自iOS的Core Animation的命令，因此在任何给定的时刻GPU总共需要执行多少处理并不一定。
+     */
 }
+
 //这个方法在树上是说的viewdidunload方法、第七步是删除不需要的定点缓存和上下文，设置vertexbufferID为0避免了对应的缓存被删除以后还使用其无效的标识符，设置试图上下文为nil并且设置当前的上下文为nil以便于让cocoaTouch收回所有的上下文使用的内存和其他资源。
 -(void)dealloc{
     GLKView *view = (GLKView *)self.view;

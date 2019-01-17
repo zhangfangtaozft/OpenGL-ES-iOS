@@ -9,6 +9,9 @@
 #import <GLKit/GLKit.h>
 #import <UIKit/UIKit.h>
 #pragma mark -AGLKTextureInfo
+/*
+ AGLKTextureInfo是一个封装了纹理缓存的有用信息的简单类，例如响应的OpenGL ES 纹理缓存的标识符以及纹理的图像尺寸。AGLKTextureLoader只声明了一个方法："+ (AGLKTextureInfo *)textureWithCGImage:(CGImageRef)cgImage options:(NSDictionary *)options error:(NSError **)outError;"
+ */
 @interface AGLKTextureInfo: NSObject
 {
 @private
