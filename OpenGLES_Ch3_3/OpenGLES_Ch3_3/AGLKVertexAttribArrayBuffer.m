@@ -56,8 +56,9 @@ stride;
     
     return self;
 }
-
-
+/*
+ 该方法可以定期地使用变化了的定点位置重新初始化定点数组缓存的内容以产生一个在突出纹理失真的简单动画，这个失真是自然发生的几何纹理映射的一部分。
+ */
 - (void)reinitWithAttribStride:(GLsizeiptr)aStride
               numberOfVertices:(GLsizei)count
                          bytes:(const GLvoid *)dataPtr;

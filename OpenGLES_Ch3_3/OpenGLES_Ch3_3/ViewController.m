@@ -11,8 +11,11 @@
 #import <Foundation/Foundation.h>
 #import "AGLKVertexAttribArrayBuffer.h"
 #import "AGLKContext.h"
-@interface GLKEffectPropertyTexture (AGLKAdditions)
 
+@interface GLKEffectPropertyTexture (AGLKAdditions)
+/*
+ 纹理取样模式和纹理循环模式被保存在OpenGL ES 上下文的每一个纹理的标识符中。换句话说，在上下文中的每一个纹理缓存都有它自己的不依赖于任何其他的纹理缓存的模式，模式是通过glTexParameteri()函数来设置的，并且通常在一个纹理缓存缓存被初始化以后就不会再产生其他模式了。但是，这个例子修改了模式，以响应用户的输入。
+ */
 - (void)aglkSetParameter:(GLenum)parameterID
                    value:(GLint)value;
 
