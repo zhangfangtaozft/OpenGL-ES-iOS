@@ -45,6 +45,7 @@
     glEnable(capability);
 }
 
+
 - (void)disable:(GLenum)capability;
 {
     NSAssert(self == [[self class] currentContext],
@@ -52,6 +53,7 @@
     
     glDisable(capability);
 }
+
 
 - (void)setBlendSourceFunction:(GLenum)sfactor
            destinationFunction:(GLenum)dfactor;

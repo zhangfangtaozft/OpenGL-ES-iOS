@@ -22,9 +22,10 @@
     GLuint _texture0ID;
     GLuint _texture1ID;
 }
+
 @property (strong, nonatomic) GLKBaseEffect
 *baseEffect;
 @property (strong, nonatomic) AGLKVertexAttribArrayBuffer
 *vertexBuffer;
-@end
 
+@end

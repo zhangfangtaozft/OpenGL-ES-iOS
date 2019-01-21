@@ -6,11 +6,6 @@
 //  Copyright © 2019 Frank.zhang. All rights reserved.
 //
 
-//
-//  AGLKVertexAttribArrayBuffer.m
-//
-//
-
 #import "AGLKVertexAttribArrayBuffer.h"
 
 @interface AGLKVertexAttribArrayBuffer ()
@@ -82,6 +77,7 @@ stride;
                  GL_DYNAMIC_DRAW);
 }
 
+
 - (void)prepareToDrawWithAttrib:(GLuint)index
             numberOfCoordinates:(GLint)count
                    attribOffset:(GLsizeiptr)offset
@@ -119,7 +115,6 @@ stride;
 #endif
 }
 
-
 - (void)drawArrayWithMode:(GLenum)mode
          startVertexIndex:(GLint)first
          numberOfVertices:(GLsizei)count
@@ -131,12 +126,14 @@ stride;
     glDrawArrays(mode, first, count); // Step 6
 }
 
+
 + (void)drawPreparedArraysWithMode:(GLenum)mode
                   startVertexIndex:(GLint)first
                   numberOfVertices:(GLsizei)count;
 {
     glDrawArrays(mode, first, count); // Step 6
 }
+
 
 - (void)dealloc
 {
