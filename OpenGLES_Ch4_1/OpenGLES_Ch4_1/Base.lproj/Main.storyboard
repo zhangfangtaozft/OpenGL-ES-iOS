@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GLKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0E2-A1-zDn">
+                                <rect key="frame" x="26" y="606" width="51" height="31"/>
+                                <connections>
+                                    <action selector="leftSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ikI-cJ-TOd"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FJI-Af-f5G">
+                                <rect key="frame" x="300" y="606" width="51" height="31"/>
+                                <connections>
+                                    <action selector="rightSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="svs-T5-0IC"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="5Gh-We-XSw">
+                                <rect key="frame" x="24" y="541.5" width="327" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="5K1-76-RRK"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Face Normals:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dQ-jA-VBF">
+                                <rect key="frame" x="26" y="581.5" width="106.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw Normals:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI2-wZ-DTU">
+                                <rect key="frame" x="266" y="581.5" width="83" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0E2-A1-zDn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="3wZ-tg-9Na"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FJI-Af-f5G" secondAttribute="bottom" constant="30" id="5qt-ZI-C3B"/>
+                            <constraint firstItem="0E2-A1-zDn" firstAttribute="top" secondItem="2dQ-jA-VBF" secondAttribute="bottom" constant="10" id="99N-gs-1Cs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Gh-We-XSw" secondAttribute="trailing" constant="10" id="A0l-A3-eGJ"/>
+                            <constraint firstItem="2dQ-jA-VBF" firstAttribute="top" secondItem="5Gh-We-XSw" secondAttribute="bottom" constant="10" id="C3T-0J-Sra"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eI2-wZ-DTU" secondAttribute="trailing" constant="10" id="E41-X4-acz"/>
+                            <constraint firstItem="2dQ-jA-VBF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Hy6-OP-NPM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FJI-Af-f5G" secondAttribute="trailing" constant="10" id="ImH-1d-rfW"/>
+                            <constraint firstItem="FJI-Af-f5G" firstAttribute="top" secondItem="eI2-wZ-DTU" secondAttribute="bottom" constant="10" id="L9d-BN-ENW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0E2-A1-zDn" secondAttribute="bottom" constant="30" id="YT0-Xf-cak"/>
+                            <constraint firstItem="5Gh-We-XSw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="yaY-9w-HoH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

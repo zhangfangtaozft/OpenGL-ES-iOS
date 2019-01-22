@@ -5,7 +5,10 @@
 //  Created by frank.zhang on 2019/1/21.
 //  Copyright © 2019 Frank.zhang. All rights reserved.
 //
-
+/*
+ 一个片元着色器是一个由GPU执行的，用来完成计算当前渲染缓存中的每个片元的最终红颜色所需要的运算的间断程序。包含偏远着色器程序的文件通常使用".fsh"文件扩展名。
+ 相比其他的文离婚和配置方法，GL Shading Language程序往往是既剪短又更加自文档化的。但是，OpenGL ES Shading Language是一个复杂到值得用整本书来论述的主题。
+ */
 // UNIFORMS
 uniform sampler2D uSampler0;
 uniform sampler2D uSampler1;

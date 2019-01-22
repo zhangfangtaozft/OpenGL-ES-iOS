@@ -5,6 +5,9 @@
 //  Created by frank.zhang on 2019/1/21.
 //  Copyright © 2019 Frank.zhang. All rights reserved.
 //
+/*
+ 多重纹理的强大和灵活性在使用自定义的利用OpenGL ES Shading Language的OpenGL ES 2.0片元程序时会变得更加明显。一个额外的例子，在OpenGLES_Ch3_6中，首先使用一个由GLKit的GLKBaseEffect在后台自动生成的Shading Language程序绘制一个立方体，然后使用下面的自定义定点和片元的Shading Language程序绘制第二个立方体，现在不用担心没有学过Shading Language（截止到目前为止，我对于Shading Language也是不熟悉）。
+ */
 
 // VERTEX ATTRIBUTES
 attribute vec4 aPosition;
