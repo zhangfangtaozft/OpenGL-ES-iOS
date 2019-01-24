@@ -32,6 +32,7 @@
 		F82246EF21F5CE2500CFBA4C /* AGLKContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKContext.m; sourceTree = "<group>"; };
 		F8334CF421F6B75200E81B04 /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
 		F8334CF521F6B75200E81B04 /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		F836283421F847100021B179 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 				F82246E321F5CD7000CFBA4C /* LaunchScreen.storyboard */,
 				F82246E621F5CD7000CFBA4C /* Info.plist */,
 				F82246E721F5CD7000CFBA4C /* main.m */,
+				F836283421F847100021B179 /* README.md */,
 			);
 			path = OpenGLES_Ch4_1;
 			sourceTree = "<group>";
