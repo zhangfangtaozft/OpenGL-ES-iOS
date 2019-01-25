@@ -1,14 +1,11 @@
 //
 //  sphere.h
-//  OpenGLES_Ch5_1
+//  OpenGLES_Ch5_2
 //
-//  Created by frank.zhang on 2019/1/24.
+//  Created by frank.zhang on 2019/1/25.
 //  Copyright © 2019 Frank.zhang. All rights reserved.
 //
-/*
- 如下数据是由Perl语言脚本生成的
- 截止到现在所有的例子都是硬编码的顶点数据，除了类似-1，0，1的简单常量之外，硬编码其他的任何东西通常并不是一个好主意。这些例子提供了与数据简单显示使用的代码相似的顶点数据定义代码。
- */
+
 /*
  created with obj2opengl.pl
  
@@ -7806,4 +7803,5 @@ float sphereTexCoords [] = {
     1.000000, 0.111111,
     0.962963, 0.111111,
 };
+
 
