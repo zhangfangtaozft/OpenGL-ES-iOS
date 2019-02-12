@@ -5,6 +5,13 @@
 //  Created by frank.zhang on 2019/1/25.
 //  Copyright © 2019 Frank.zhang. All rights reserved.
 //
+/*
+ 下面是不用GLKView的辅助而管理一个OpenGL ES深度缓存所需的步骤：
+ 1）Geneate（生成）--告诉OpenGL ES为深度缓存生成一个独一无二的标识符。
+ 2）Bind(绑定)--告诉OpenGL ES在接下来的操作中使用哪一个缓存。
+ 3）Configure Storage(配置存储) -- 指定深度缓存的大小。
+ 4）Attach（附加）--赴埃及深度缓存到一个帧缓存。
+ */
 
 #import "ViewController.h"
 #import "AGLKVertexAttribArrayBuffer.h"

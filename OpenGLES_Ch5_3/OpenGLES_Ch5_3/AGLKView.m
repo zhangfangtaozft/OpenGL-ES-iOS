@@ -143,7 +143,9 @@
     [self.context renderbufferStorage:GL_RENDERBUFFER
                          fromDrawable:eaglLayer];
     
-    
+ /*
+  下面使用了一个扩展自例子2_2的AGLKView版本，而不是GLKit的GLKView。drawableDepthFormat属性被添加到AGLKView，同时还有一个用来存储OpenGL ES 深度环迅表示服的实例变量。下面添加到GLKView的"-layoutSubviews"方法的代码按照需求创建并且配置了一个深度缓存来匹配视图的像素颜色渲染缓存的尺寸。
+  */
     if (0 != depthRenderBuffer)
     {
         glDeleteRenderbuffers(1, &depthRenderBuffer); // Step 7
@@ -170,16 +172,11 @@
                                   GL_RENDERBUFFER,
                                   depthRenderBuffer);
     }
-    
-    // Check for any errors configuring the render buffer
     GLenum status = glCheckFramebufferStatus(
                                              GL_FRAMEBUFFER) ;
-    
     if(status != GL_FRAMEBUFFER_COMPLETE) {
         NSLog(@"failed to make complete frame buffer object %x", status);
     }
-    
-    // Make the Color Render Buffer the current buffer for display
     glBindRenderbuffer(GL_RENDERBUFFER, colorRenderBuffer);
 }
 
