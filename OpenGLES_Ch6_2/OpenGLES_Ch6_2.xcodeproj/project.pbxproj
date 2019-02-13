@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F87C807D2213F8D80027942C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C807C2213F8D80027942C /* AppDelegate.m */; };
+		F87C80802213F8D80027942C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C807F2213F8D80027942C /* ViewController.m */; };
+		F87C80832213F8D80027942C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87C80812213F8D80027942C /* Main.storyboard */; };
+		F87C80852213F8DF0027942C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87C80842213F8DF0027942C /* Assets.xcassets */; };
+		F87C80882213F8DF0027942C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87C80862213F8DF0027942C /* LaunchScreen.storyboard */; };
+		F87C808B2213F8DF0027942C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C808A2213F8DF0027942C /* main.m */; };
+		F87C80932213FA920027942C /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C80922213FA920027942C /* AGLKContext.m */; };
+		F87C80962213FBD50027942C /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C80952213FBD50027942C /* AGLKVertexAttribArrayBuffer.m */; };
+		F87C80992214032F0027942C /* SceneMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C80982214032F0027942C /* SceneMesh.m */; };
+		F87C809C221405160027942C /* SceneAnimatedMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = F87C809B221405160027942C /* SceneAnimatedMesh.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F87C80782213F8D80027942C /* OpenGLES_Ch6_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES_Ch6_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87C807B2213F8D80027942C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F87C807C2213F8D80027942C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F87C807E2213F8D80027942C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F87C807F2213F8D80027942C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F87C80822213F8D80027942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F87C80842213F8DF0027942C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F87C80872213F8DF0027942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F87C80892213F8DF0027942C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87C808A2213F8DF0027942C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F87C80912213FA920027942C /* AGLKContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLKContext.h; sourceTree = "<group>"; };
+		F87C80922213FA920027942C /* AGLKContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKContext.m; sourceTree = "<group>"; };
+		F87C80942213FBD50027942C /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		F87C80952213FBD50027942C /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		F87C80972214032F0027942C /* SceneMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneMesh.h; sourceTree = "<group>"; };
+		F87C80982214032F0027942C /* SceneMesh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneMesh.m; sourceTree = "<group>"; };
+		F87C809A221405160027942C /* SceneAnimatedMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneAnimatedMesh.h; sourceTree = "<group>"; };
+		F87C809B221405160027942C /* SceneAnimatedMesh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneAnimatedMesh.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F87C80752213F8D80027942C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F87C806F2213F8D80027942C = {
+			isa = PBXGroup;
+			children = (
+				F87C807A2213F8D80027942C /* OpenGLES_Ch6_2 */,
+				F87C80792213F8D80027942C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F87C80792213F8D80027942C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87C80782213F8D80027942C /* OpenGLES_Ch6_2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F87C807A2213F8D80027942C /* OpenGLES_Ch6_2 */ = {
+			isa = PBXGroup;
+			children = (
+				F87C807B2213F8D80027942C /* AppDelegate.h */,
+				F87C807C2213F8D80027942C /* AppDelegate.m */,
+				F87C80912213FA920027942C /* AGLKContext.h */,
+				F87C80922213FA920027942C /* AGLKContext.m */,
+				F87C80942213FBD50027942C /* AGLKVertexAttribArrayBuffer.h */,
+				F87C80952213FBD50027942C /* AGLKVertexAttribArrayBuffer.m */,
+				F87C809A221405160027942C /* SceneAnimatedMesh.h */,
+				F87C809B221405160027942C /* SceneAnimatedMesh.m */,
+				F87C80972214032F0027942C /* SceneMesh.h */,
+				F87C80982214032F0027942C /* SceneMesh.m */,
+				F87C807E2213F8D80027942C /* ViewController.h */,
+				F87C807F2213F8D80027942C /* ViewController.m */,
+				F87C80812213F8D80027942C /* Main.storyboard */,
+				F87C80842213F8DF0027942C /* Assets.xcassets */,
+				F87C80862213F8DF0027942C /* LaunchScreen.storyboard */,
+				F87C80892213F8DF0027942C /* Info.plist */,
+				F87C808A2213F8DF0027942C /* main.m */,
+			);
+			path = OpenGLES_Ch6_2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F87C80772213F8D80027942C /* OpenGLES_Ch6_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87C808E2213F8DF0027942C /* Build configuration list for PBXNativeTarget "OpenGLES_Ch6_2" */;
+			buildPhases = (
+				F87C80742213F8D80027942C /* Sources */,
+				F87C80752213F8D80027942C /* Frameworks */,
+				F87C80762213F8D80027942C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLES_Ch6_2;
+			productName = OpenGLES_Ch6_2;
+			productReference = F87C80782213F8D80027942C /* OpenGLES_Ch6_2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F87C80702213F8D80027942C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Frank.zhang;
+				TargetAttributes = {
+					F87C80772213F8D80027942C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F87C80732213F8D80027942C /* Build configuration list for PBXProject "OpenGLES_Ch6_2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F87C806F2213F8D80027942C;
+			productRefGroup = F87C80792213F8D80027942C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F87C80772213F8D80027942C /* OpenGLES_Ch6_2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F87C80762213F8D80027942C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87C80882213F8DF0027942C /* LaunchScreen.storyboard in Resources */,
+				F87C80852213F8DF0027942C /* Assets.xcassets in Resources */,
+				F87C80832213F8D80027942C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F87C80742213F8D80027942C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87C80932213FA920027942C /* AGLKContext.m in Sources */,
+				F87C809C221405160027942C /* SceneAnimatedMesh.m in Sources */,
+				F87C80802213F8D80027942C /* ViewController.m in Sources */,
+				F87C80962213FBD50027942C /* AGLKVertexAttribArrayBuffer.m in Sources */,
+				F87C808B2213F8DF0027942C /* main.m in Sources */,
+				F87C807D2213F8D80027942C /* AppDelegate.m in Sources */,
+				F87C80992214032F0027942C /* SceneMesh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F87C80812213F8D80027942C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87C80822213F8D80027942C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F87C80862213F8DF0027942C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87C80872213F8DF0027942C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F87C808C2213F8DF0027942C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F87C808D2213F8DF0027942C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F87C808F2213F8DF0027942C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BWWY5VW6C;
+				INFOPLIST_FILE = OpenGLES_Ch6_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Neulion.OpenGLES-Ch6-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F87C80902213F8DF0027942C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BWWY5VW6C;
+				INFOPLIST_FILE = OpenGLES_Ch6_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Neulion.OpenGLES-Ch6-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F87C80732213F8D80027942C /* Build configuration list for PBXProject "OpenGLES_Ch6_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87C808C2213F8DF0027942C /* Debug */,
+				F87C808D2213F8DF0027942C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87C808E2213F8DF0027942C /* Build configuration list for PBXNativeTarget "OpenGLES_Ch6_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87C808F2213F8DF0027942C /* Debug */,
+				F87C80902213F8DF0027942C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F87C80702213F8D80027942C /* Project object */;
+}
