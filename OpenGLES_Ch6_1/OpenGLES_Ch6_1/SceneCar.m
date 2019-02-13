@@ -121,7 +121,6 @@ radius;
         {
             float    distance = GLKVector3Distance(
                                                    self.nextPosition, currentCar.nextPosition);
-            
             if((2.0f * self.radius) > distance)
             {
                 GLKVector3 ownVelocity = self.velocity;
@@ -228,6 +227,9 @@ radius;
     self.position = self.nextPosition;
 }
 
+/*
+ 下面这个方法会设置当前材质的颜色以匹配碰碰车的颜色，平移model-view坐标系到碰碰车的当前位置，旋转坐标系以匹配碰碰车的颜色，平移model-view坐标系到碰碰车的当前位置，旋转坐标系以匹配碰碰车的当前偏航角，并且绘制碰碰车模型。
+ */
 - (void)drawWithBaseEffect:(GLKBaseEffect *)anEffect;
 {
     GLKMatrix4  savedModelviewMatrix =
